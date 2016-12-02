@@ -1,0 +1,19 @@
+{
+  "name": "phq9",
+  "version": "1.0.0",
+  "description": "phq9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crc442/phq9.git"
+  },
+  "author": "Chirag Chauhan <crc442@nyu.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crc442/phq9/issues"
+  },
+  "homepage": "https://github.com/crc442/phq9#readme"
+}
