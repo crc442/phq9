@@ -82,3 +82,5 @@ Choose **2 (Scolling)** because it seems quicker and more efficient.
 ## Future
   - [ ] complete tests
   - [ ] add webpack-dev-server
+  - [ ] test coverage
+  - [ ] more commands/scripts(ex. build)
