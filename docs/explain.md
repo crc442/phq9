@@ -15,7 +15,14 @@
 - Using Redux to manage state
 
 ## Design
+- 1) Full Page
 ![](https://github.com/crc442/phq9/blob/master/docs/design1.png)
+
+- 2) Scrolling
+![](https://github.com/crc442/phq9/blob/master/docs/design2.png)
+
+Choose **2 (Scolling)** because it seems quicker and more efficient.
+`Tracker` at the bottom trackes unanswered questions.
 
 ## Project Structure
 
