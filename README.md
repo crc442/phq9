@@ -1,7 +1,6 @@
 # phq9
 Patient Health Questionnaire (PHQ-9)
 
-[Demo]()
 [Docs](https://github.com/crc442/phq9/blob/master/docs/explain.md)
 
 ---
