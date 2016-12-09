@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Merriweather');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+}
+
+.header {
+	text-align: center;
+	border-bottom: 1px solid #FAFAFA;
+	margin-bottom: 1rem;
+}
+
+i {
+	font-size: 0.8rem;
+  text-align: center;
+  display: block;
+  color: #4a4a4a;
+  padding-bottom: 3rem;
+}
+
+.questionWrapper {
+  margin: 2rem 8rem;
+	padding: 2rem;
+  background: #FAFAFA;
+  border-radius: 2px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.questionWrapper:hover {
+  box-shadow: 0 3px 6px rgba(52, 73, 94, 0.16), 0 3px 6px rgba(52, 73, 94, 0.23);
+}
+
+.submit {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  color: cornflowerblue;
+  font-size: 1rem;
+  border: 2px solid cornflowerblue;
+  background: #FFF;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.submit:hover {
+  background: cornflowerblue;
+  color: #FFF;
+}
+
