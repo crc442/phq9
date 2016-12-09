@@ -4,10 +4,12 @@
   "description": "phq9",
   "main": "app.js",
   "scripts": {
+    "test:lint": "eslint . --ext .js --ext .jsx --ignore-path .gitignore --cache",
     "start": "node app",
-    "dev": "webpack --progress --watch & node app",
+    "wp": "webpack --watch --progress",
+    "dev": "node app & npm run wp",
     "build": "",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_PATH=app ava --fail-fast --verbose **/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -20,12 +22,19 @@
   },
   "homepage": "https://github.com/crc442/phq9#readme",
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.14.0",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "react-redux": "^4.4.6",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
+    "ava": "^0.17.0",
     "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.7",
     "babel-plugin-react-html-attrs": "^2.0.0",
     "babel-plugin-transform-class-properties": "^6.18.0",
@@ -33,6 +42,29 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
-    "webpack": "^1.13.3"
+    "babel-register": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.6.0",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "ignore-styles": "^5.0.1",
+    "react-addons-test-utils": "^15.4.1",
+    "react-hot-loader": "^1.3.1",
+    "redux-ava": "^2.2.0",
+    "redux-logger": "^2.7.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "ignore-styles",
+      "./test/helpers/setup.js"
+    ],
+    "babel": "inherit"
   }
 }
