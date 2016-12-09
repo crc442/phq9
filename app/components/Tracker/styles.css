@@ -1,0 +1,18 @@
+.numbers {
+  margin: 0 auto;
+  display: flex;
+  color: #bdc3c7;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.numbers p {
+  margin: 0 4px;
+  position: relative;
+}
+
+.active {
+  color: #2ecc71;
+}
+

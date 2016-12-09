@@ -1,0 +1,21 @@
+.all {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(52, 73, 94, 0.7);
+}
+
+.score {
+  font-size: 5rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  font-family: 'Merriweather';
+  color: #2C3E50;
+}
+
+.display {
+  font-size: 1.2rem;
+  color: #bdc3c7;
+}
