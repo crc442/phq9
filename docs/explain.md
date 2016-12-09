@@ -62,6 +62,8 @@ Choose **2 (Scolling)** because it seems quicker and more efficient.
   but that can be easily done with 'redux-sagas' if needed.
   The server, other than serving the 'one-page' application, also hosts an api to fetch
   the available therapists.
+  Side-Note: Proud of the 'Tracker' component. Also, realized that the Rating (star) component,
+  with a few changes/features, can be worth open-sourcing.
 
 ### Components
   The components are divided on smart and dumb components.  The `containers` folder
