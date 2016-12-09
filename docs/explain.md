@@ -15,7 +15,7 @@
 - Using Redux to manage state
 
 ## Design
-
+![](https://github.com/crc442/phq9/blob/master/docs/design1.png)
 
 ## Project Structure
 
