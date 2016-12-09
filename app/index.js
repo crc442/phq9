@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, browserHistory } from 'react-router';
+import { Provider } from 'react-redux';
 
-export class Layout extends Component {
-	render() {
-		return (
-			<div>
-				Hello
-			</div>
-		);
-	}
-}
+import Routes from './components/Routes';
+import store from './store';
 
 const app = document.getElementById('app');
 
-ReactDOM.render(<Layout />, app);
+ReactDOM.render(<Provider store={store}>
+  <Router history={browserHistory}>
+    { Routes }
+  </Router>
+</Provider>, app);
 
